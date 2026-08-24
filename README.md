@@ -1,308 +1,102 @@
 # OpenDomainHub
 
-**Open data. Real domains. Practical solutions.**
+**Realistic industry data, openly available.**
 
-OpenDomainHub is an open-source initiative for building reusable, realistic, and implementation-ready data foundations across business domains and industries.
+OpenDomainHub is an open-source initiative for realistic industry and domain data. We publish reusable data models, synthetic datasets, business rules, use cases, and reference architectures so teams can build, learn, and demonstrate solutions without production data.
 
-Our goal is to make it easier for developers, data engineers, architects, analysts, students, startups, and solution teams to explore real-world business problems without needing access to sensitive production data.
+This repository is the **organization hub**. Each industry domain lives in its **own repository**.
 
-Each domain repository brings together **synthetic data generation, domain data models, business use cases, analytics scenarios, and reference architectures** in one place.
+---
 
-## 🎯 Purpose
+## Overview
 
-Real-world data projects often start with the same challenges:
+OpenDomainHub is a growing library of domain foundations. Each domain captures how a real industry works: entities, relationships, operational rules, metrics, and the architectures used to analyze them.
 
-* Production data is private or restricted.
-* Public datasets rarely represent complete business processes.
-* Demo datasets are often too simple.
-* Relationships between business entities are missing.
-* Business rules are difficult to reproduce.
-* Architecture examples are disconnected from realistic data.
-* Building a meaningful POC requires significant preparation.
+Use it to prototype pipelines, train models, design analytics, and teach or demo industry solutions—without waiting for access to sensitive systems.
 
-OpenDomainHub aims to reduce that effort.
+## Purpose
 
-Instead of starting from an empty database, you can start with a domain that already contains:
+Give practitioners a complete, realistic starting point for industry data work.
 
-**Business Context → Data Model → Synthetic Data → Business Rules → Use Cases → Analytics → Reference Architecture**
+Typical projects stall on the same gaps: production data is restricted, public datasets are incomplete, and demo data rarely encodes real business behavior. OpenDomainHub reduces that setup cost so you can start from a coherent domain instead of an empty schema.
 
-## 💡 Motivation
+## Motivation
 
-Learning a technology is relatively easy.
+Technology is easy to sample. Realistic domain context is not.
 
-Finding realistic data and understanding how a real business operates is much harder.
+A banking demo needs more than a customer list. It needs accounts, cards, transactions, loans, merchants, branches, and the rules that bind them. The same is true in healthcare, retail, manufacturing, telecom, and every other industry we cover.
 
-A banking application needs more than a `customers.csv`.
+OpenDomainHub exists to close the gap between sample files and operational domain solutions.
 
-It needs customers, accounts, cards, transactions, loans, payments, merchants, branches, relationships, business rules, and realistic behavior between those entities.
+## Mission
 
-The same problem exists in healthcare, retail, manufacturing, telecom, insurance, automotive, logistics, energy, and almost every other industry.
+Make realistic domain data and business knowledge accessible to everyone building data, analytics, and AI solutions.
 
-**OpenDomainHub exists to bridge the gap between sample data and real-world domain solutions.**
+## Vision
 
-## 🧩 What Each Domain Provides
+A community-maintained library where each domain is a practical path from industry context to working solutions—data you can generate, rules you can trust, use cases you can run, and architectures you can reuse.
 
-Every domain repository will progressively include:
+---
 
-### Domain Overview
+## How it works
 
-Understand the industry, business processes, personas, terminology, and important entities.
+Every domain follows the same path:
 
-### Data Models
+**Domain → Data Model → Synthetic Data → Business Rules → Use Cases → Analytics → AI → Reference Architecture**
 
-Reusable schemas representing realistic relationships between domain entities.
+| Stage | What you get |
+| --- | --- |
+| **Domain** | Industry context, processes, personas, and terminology |
+| **Data model** | Schemas and entity relationships |
+| **Synthetic data** | Generators for realistic, scalable, non-sensitive datasets |
+| **Business rules** | Constraints and behaviors that keep data operationally plausible |
+| **Use cases** | Problems organizations actually solve with the data |
+| **Analytics** | KPIs, metrics, and analytical questions |
+| **AI** | ML, RAG, agents, and other applied examples |
+| **Reference architecture** | How data moves from sources through storage, transformation, analytics, and AI |
 
-### Synthetic Data Generators
+Each domain repository is intended to include **synthetic data generators**, **schemas**, **business use cases**, **KPIs**, **analytics**, **AI/ML examples**, and **reference architectures**. Coverage grows over time; not every artifact is present on day one.
 
-Configurable scripts for generating realistic and scalable datasets without exposing real customer information.
+---
 
-### Business Rules
+## Domains
 
-Rules and relationships that make generated data behave more like real operational data.
+Each domain has (or will have) a **separate repository**. This hub links them together.
 
-### Business Use Cases
+| Domain | Focus |
+| --- | --- |
+| [Banking](https://github.com/OpenDomainHub/banking) | Customers, accounts, cards, payments, lending |
+| [Insurance](https://github.com/OpenDomainHub/insurance) | Policies, claims, underwriting, risk |
+| [Healthcare](https://github.com/OpenDomainHub/healthcare) | Patients, encounters, providers, clinical operations |
+| [Pharma](https://github.com/OpenDomainHub/pharma) | Trials, manufacturing, commercial, regulatory |
+| [Retail](https://github.com/OpenDomainHub/retail) | Stores, assortment, inventory, merchandising |
+| [E-commerce](https://github.com/OpenDomainHub/ecommerce) | Catalog, orders, fulfillment, digital commerce |
+| [Manufacturing](https://github.com/OpenDomainHub/manufacturing) | Plants, production, quality, maintenance |
+| [Automotive](https://github.com/OpenDomainHub/automotive) | Vehicles, dealers, parts, aftersales |
+| [Telecom](https://github.com/OpenDomainHub/telecom) | Subscribers, networks, usage, billing |
+| [Energy](https://github.com/OpenDomainHub/energy) | Generation, grid, metering, utilities |
+| [Logistics](https://github.com/OpenDomainHub/logistics) | Shipments, carriers, routes, warehouses |
+| [Supply Chain](https://github.com/OpenDomainHub/supply-chain) | Planning, procurement, inventory, distribution |
+| [SaaS](https://github.com/OpenDomainHub/saas) | Tenants, subscriptions, product usage, billing |
+| [Technology](https://github.com/OpenDomainHub/technology) | Platforms, IT operations, software delivery |
 
-Practical problems that organizations solve using the domain data.
+Repositories are created as domains are published. If a link 404s, that domain is not live yet.
 
-### KPIs & Metrics
+---
 
-Common business metrics, dimensions, calculations, and analytical questions.
+## Contributing
 
-### Reference Architecture
+OpenDomainHub is community-driven. Useful contributions include:
 
-Example architectures showing how the data can move from source systems through ingestion, storage, transformation, semantic models, analytics, and AI applications.
+- New or improved **domain repositories**
+- **Schemas** and data models
+- **Synthetic data generators** and business rules
+- **Use cases**, **KPIs**, and analytics examples
+- **AI/ML** examples and **reference architectures**
+- Documentation, tests, and data-quality checks
 
-### Analytics & AI
+Open an issue or pull request on this hub, or on the relevant domain repository. Prefer focused changes, realistic domain fidelity, and artifacts others can run and reuse.
 
-Examples covering dashboards, SQL analytics, machine learning, RAG, agents, natural-language analytics, and other data-driven applications.
-
-## 🌍 Domains
-
-OpenDomainHub is designed to grow into a broad library of industry data domains.
-
-### Financial Services
-
-* Banking
-* Insurance
-* Payments
-* FinTech
-* Wealth Management
-* Lending & Credit
-
-### Healthcare & Life Sciences
-
-* Healthcare
-* Hospitals
-* Pharmaceutical
-* Life Sciences
-* Health Insurance
-* Medical Devices
-
-### Retail & Consumer
-
-* Retail
-* E-commerce
-* Consumer Packaged Goods
-* Grocery
-* Fashion
-* Marketplace
-
-### Manufacturing & Industrial
-
-* Manufacturing
-* Automotive
-* Industrial IoT
-* Device Telemetry
-* Supply Chain
-* Quality & Maintenance
-
-### Technology
-
-* SaaS
-* Software
-* Cloud Services
-* Cybersecurity
-* IT Operations
-
-### Communications & Media
-
-* Telecommunications
-* Media
-* Entertainment
-* Advertising
-
-### Energy & Utilities
-
-* Energy
-* Oil & Gas
-* Utilities
-* Renewable Energy
-* Smart Metering
-
-### Transportation & Logistics
-
-* Logistics
-* Transportation
-* Shipping
-* Fleet Management
-* Aviation
-* Warehousing
-
-### Public & Social Sectors
-
-* Government
-* Education
-* Public Services
-
-### Business Services
-
-* Sales
-* Marketing
-* Customer Support
-* Human Resources
-* Finance
-* Procurement
-
-Additional domains can be introduced as the community and project grow.
-
-## 🏗️ Repository Philosophy
-
-Each domain should be independently usable.
-
-For example:
-
-```text
-OpenDomainHub/
-├── banking
-├── insurance
-├── healthcare
-├── pharmaceutical
-├── retail
-├── ecommerce
-├── manufacturing
-├── automotive
-├── telecom
-├── energy
-├── logistics
-└── saas
-```
-
-A typical repository can follow:
-
-```text
-banking/
-├── README.md
-├── domain/
-├── schemas/
-├── generators/
-├── datasets/
-├── use-cases/
-├── metrics/
-├── architecture/
-├── analytics/
-├── ai/
-├── examples/
-├── tests/
-└── docs/
-```
-
-## 🔄 From Data to Business Value
-
-OpenDomainHub is not intended to generate random CSV files.
-
-The objective is to represent meaningful business behavior.
-
-```text
-Industry
-   ↓
-Business Context
-   ↓
-Business Entities
-   ↓
-Data Model
-   ↓
-Business Rules
-   ↓
-Synthetic Data
-   ↓
-Business Use Cases
-   ↓
-KPIs & Analytics
-   ↓
-AI / ML
-   ↓
-Reference Solutions
-```
-
-## 👥 Who Is It For?
-
-**Data Engineers** can use realistic datasets to develop and test data pipelines.
-
-**Data Architects** can explore domain models and reference architectures.
-
-**Data Analysts** can practice SQL, metrics, dashboards, and business analysis.
-
-**Data Scientists** can build ML experiments against realistic domain scenarios.
-
-**AI Engineers** can experiment with agents, RAG, semantic layers, and natural-language analytics.
-
-**Solution Architects & Sales Engineers** can quickly build industry-specific demonstrations and proofs of concept.
-
-**Students & Researchers** can learn how data is structured and used across different industries.
-
-**Startups** can prototype domain solutions without first building large datasets manually.
-
-## 🌱 Open-Source Vision
-
-Our vision is to create a community-driven library where anyone can:
-
-**Learn a domain.
-Generate its data.
-Understand its relationships.
-Explore its business problems.
-Analyze its metrics.
-Build solutions on top of it.**
-
-Every domain should eventually become a practical starting point for moving from an idea to a working data solution.
-
-## 🚀 Initial Roadmap
-
-The project will start with a small number of high-value domains and expand incrementally.
-
-**Phase 1**
-
-Banking → Retail → Manufacturing → Healthcare → SaaS
-
-**Phase 2**
-
-Insurance → Telecom → Automotive → E-commerce → Logistics
-
-**Phase 3**
-
-Pharmaceutical → Energy → Payments → Supply Chain → Media
-
-Over time, additional domains, datasets, generators, architectures, use cases, and community contributions will be added.
-
-## 🤝 Contributing
-
-OpenDomainHub is designed to be community-driven.
-
-Contributions can include:
-
-* New domain repositories
-* Data models
-* Synthetic data generators
-* Business rules
-* Domain documentation
-* Business use cases
-* KPIs and metrics
-* Reference architectures
-* Analytics examples
-* AI/ML examples
-* Tests and data-quality rules
-
-## ⭐ Mission
-
-**Make realistic domain data and business knowledge accessible to everyone building data and AI solutions.**
+---
 
 OpenDomainHub is where **domain knowledge meets data engineering, analytics, and AI.**
